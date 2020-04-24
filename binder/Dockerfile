@@ -6,5 +6,5 @@ USER jovyan
 RUN git clone https://github.com/TomAugspurger/prophet
 RUN cd prophet/python && \
   git checkout parallel && \
-  conda uninstall -n pangeo python-dateutil --force -y && \
-  conda run -n pangeo python -m pip install -e .
+  conda uninstall -n notebook python-dateutil --force -y && \
+  conda run -n notebook python -m pip install -e .
